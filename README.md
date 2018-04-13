@@ -6,11 +6,11 @@ This is a repository with all the scripts used for the work "Comporehensive anal
 There are mostly R scripts, which rely on bioconductor packages.
 
 The script "identify_LncRNAs.R" is the main script of the pipeline.
-The script "genomic_context.sh" used bedtools to classify putative LncRNAs into antisense, intronic and intergenic.
+The script "genomic_context.sh" uses bedtools to classify putative LncRNAs into antisense, intronic and intergenic.
 The script "adjust_lncRNA_ids.R" is a helper script to map LncRNA IDs and names in all output files (.bed format, .gtf format, table of counts).
-The script "DE_and_WGCNA.R" used DESeq2 and WGCNA to calculate differential expression and create a weighted co-expression network.
-The script "annotate_expression.R" annotated the expression of antisense (and intronic) LncRNAs in the context of the gene on the opposite strand.
-The script "closest_gene_lincs.R" annotated the expression of intergenic LncRNAs in the context of the closest neighbouring gene.
+The script "DE_and_WGCNA.R" uses DESeq2 and WGCNA to calculate differential expression and create a weighted co-expression network.
+The script "annotate_expression.R" annotates the expression of antisense (and intronic) LncRNAs in the context of the gene on the opposite strand.
+The script "closest_gene_lincs.R" annotates the expression of intergenic LncRNAs in the context of the closest neighbouring gene.
 The script "calc_start_sites.R" analyses LncRNAs in the context of Phantom annotated transcription start sites.
 The script "synteny.sh" identifies LncRNAs overlapping syntenic blocks in Human, Rat and Mouse.
 The script "homologs.R" identifies LncRNAs antisense of orthologous genes in Human, Rat and Mouse.
